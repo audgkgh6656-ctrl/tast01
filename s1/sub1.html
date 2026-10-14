@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파크짐 메인 리디자인</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+/*---------- 리셋 ----------*/
+html,body { height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input { margin:0; padding:0; }
+body,h1,h2,h3,h4,input,button { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+a { text-decoration: none; color: black; }
+
+/*---------- wrap ----------*/
+#wrap { position: relative; height: 1320px; font-family: "Noto Sans KR"; }
+
+/*---------- header ----------*/
+header { box-shadow: 0px 2px 5px rgba(0,0,0,0.3); position: fixed; width: 100%; height: 120px; background: white; /*border: 2px dashed red;*/ }
+header .logo { margin-left: 404px; margin-top: 45px; width: 153px; height: 46px; }
+header ul { position: absolute; left: 1020px; top: 57px; justify-content: space-between; display: flex; width: 463px; /*background: yellowgreen;*/ }
+header ul li p{ font-weight: 500; font-size: 17px; color: black; }
+
+header ul li p:hover { color: #d62d2d; }
+
+/*---------- visual ----------*/
+#visual { overflow: hidden; padding-top: 120px; height: 1140px; /*border: 2px dashed red;*/ }
+#visual img { z-index: -9999; height: 100%; }
+
+/*---------- footer ----------*/
+footer { width: 100%; height: 60px; background: #3b3b3b; }
+footer p { text-align: center; padding-top: 22px; font-size: 13px; color: white; font-weight: 300; }
+
+</style>
+</head>
+<body>
+
+<div id="wrap">
+
+<!--////////// header //////////-->
+    <header>
+        <div class="logo"><a href="#"><img src="images/logo.jpg" alt="로고"></a></div>
+        <ul>
+            <li><a href="http://audgk6656.woobi.co.kr/portfolio/s1/sub1-1.html"><p>PARK GYM</p></a></li>
+            <li><a href="#"><p>지점안내</p></a></li>
+            <li><a href="#"><p>프로그램</p></a></li>
+            <li><a href="#"><p>공지사항</p></a></li>
+            <li><a href="#"><p>운동/건강정보</p></a></li>
+        </ul>
+    </header>
+
+<!--////////// visual //////////-->
+    <div id="visual"><img src="images/v1.jpg" alt=""> </div>
+
+<!--////////// footer //////////-->
+    <footer>
+        <p>COPYRIGHT&copy; PARKGYM. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

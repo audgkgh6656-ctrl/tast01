@@ -1,0 +1,174 @@
+/*------------리셋------------*/
+html,body { height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input { margin:0; padding:0; }
+body,h1,h2,h3,h4,input,button { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+a {text-decoration: none; color: black;}
+
+
+/*------------레이아웃------------*/
+header {
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    position: absolute; width: 100%; height: 90px; background: white;
+    font-size: 20px; font-family: "Noto Sans KR"; font-weight: 400;}
+#home {
+    height: 100vh;
+    background-image: url(../images/backg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#about { display: flex; align-items: center; position: relative; height: 100vh; background: white; }
+#about .inner { position: relative; margin: 0 auto; width: 1100px; height: 580px; }
+#portfolio { position: relative; background: #3f3f3f; }
+#portfolio .inner { width: 100%; }
+#portfolio .box { width: 1101px; margin: 0 auto; }
+#contact { 
+    position: relative; height: 100vh; 
+    background-image: url(../images/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#contact .inner { display: flex; align-items: center; height: 100vh; /*border: 5px dashed red;*/ }
+.footer { position: absolute; left: 0px; bottom: 0px; width: 100%; height: 100px; background: #413e37; }
+
+
+/*------------header------------*/
+header .gnb {
+    display: flex; justify-content: space-between; 
+    margin: 0 auto; width: 700px; height: 90px; /*border: 5px dashed red;*/ 
+}
+header .gnb li { margin-top: 44px; }
+header .gnb li h1 { margin-top: -31px; }
+header a:hover { color: #ffd555; transition: 0.3s; }
+
+/*------------nab------------*/
+.nabm {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    z-index: 50; position: fixed; left: -200px; top: 50%; 
+    margin-top: -45px;
+    width: 90px; height: 90px; border-radius: 50%; background: #ffd555;
+}
+
+.nabm img { width: 100%; }
+
+.nabs {  
+    display: none;
+    position: absolute; left: 80px; top: 0px;
+    font-family: "Roboto"; font-size: 18px;
+    padding-left: 30px;
+}
+
+.nabs li a:hover { color: #ffd555; }
+
+/*------------home------------*/
+#home .sl1 { position: absolute; left: 50%; bottom: 0px; margin-left: -175px; }
+#home .sl1 img { width: 390px; height: 127px; }
+#home h2 { 
+    z-index: 5000; position: absolute; left: 50%; bottom: 25px;
+    margin-left: -33px; font-family:"Roboto"; font-weight: 400; font-size: 26px;
+}
+
+/*------------about------------*/
+#about {font-family: "Noto Sans KR";}
+#about .p1 {box-shadow: 0px 0px 20px rgba(0,0,0,0.2); position: absolute; left: 0px; top: 0px; width: 400px; height: 500px; background: white; /*border: 5px dashed red;*/}
+#about .p1 img {width: 170px; margin-left: 115px; margin-top: 70px; /*border: 5px dashed red; */}
+#about .p1 p:nth-child(2) {margin-top: 20px; text-align: center;  font-size: 20px; font-weight: 500;}
+#about .p1 p:nth-child(3) {margin-top: 20px; text-align: center;  font-size: 16px; font-weight: 300;}
+#about .p1 .icon4 {margin: 0 auto; display: flex; justify-content: space-between; width: 250px; }
+#about .p1 .icon5 {margin: 0 auto; display: flex; justify-content: space-between; width: 330px; }
+#about .p1 .icon4 li {margin-top: 20px;box-shadow: 0px 0px 10px rgba(0,0,0,0.2); height: 40px; background: white; border-radius: 30px;}
+#about .p1 .icon5 li {margin-top: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.2); height: 40px; background: white; border-radius: 30px;}
+#about .p1 .info p {text-align: center; margin-top: 7px; padding-left: 15px; padding-right: 15px;  font-size: 14px; font-weight: 300;}
+#about .p1 .info li p:hover {font-weight: 500;}
+
+#about .p2 {box-shadow: 0px 0px 20px rgba(0,0,0,0.2); position: absolute; right: 0px; bottom: 0px; width: 800px; height: 500px; background: white; /*border: 5px dashed red;*/}
+#about .p2 p:nth-child(1) { font-size: 20px; font-weight: 500; margin-left: 170px; margin-top: 30px;}
+#about .p2 p:nth-child(2) { font-size: 16px; font-weight: 300; margin-left: 170px; margin-top: 15px;}
+#about .p2 .icon1 { position: absolute; left: 170px; top: 120px; /*border: 5px dashed red;*/}
+#about .p2 .icon2 { position: absolute; left: 240px; top: 120px;  /*border: 5px dashed red;*/}
+#about .p2 .icon2 div {margin: 7px; width: 400px; height: 44px; background: #e0e0e0;}
+#about .p2 .icon3 { position: absolute; left: 240px; top: 120px;  /*border: 5px dashed red;*/}
+#about .p2 .icon3 div {margin: 7px; width: 0px; height: 44px; background: #ffd555;}
+
+#about .sl2 {position: absolute; left: 50%; bottom: 0px; margin-left: -175px;}
+#about .sl2 img {width: 390px; height: 127px;}
+
+#about h2 {z-index: 5000; position: absolute; left: 50%; bottom: 25px; margin-left: -33px;
+    font-family:"Roboto"; font-weight: 400; font-size: 26px; color: white;}
+
+/*------------portfolio------------*/
+#portfolio .po1 {padding-top: 150px; display: flex; justify-content: space-between;}
+#portfolio .p1 {overflow: hidden; position: relative; width: 339px; height: 295px; background: white;}
+#portfolio .po2 {position: relative; padding-top: 39px; display: flex; justify-content: space-between;}
+#portfolio .po3 {position: relative; padding-top: 39px; padding-bottom: 210px; display: flex; justify-content: space-between;}
+
+.portfolio_1 { position: relative; text-align: center; font-family: "Noto Sans KR"; color: black; }
+.portfolio_1 .aa1 {font-family:"Noto Sans KR"; padding-top:20px ;  font-size: 35px;}
+.portfolio_1 p:nth-child(2) {font-size: 20px;}
+.portfolio_1 p:nth-child(3) {font-weight: 300; padding-top: 30px; font-size: 15px; /*border: 5px dashed red;*/}
+
+.portfolio_1 .gil {position: absolute; left:calc(50% - 300px); bottom: 50px; text-align: center; justify-content: space-between; display: flex;  width: 600px; margin: 0 auto; }
+.portfolio_1 .gil li { width: 150px; height: 30px; }
+.portfolio_1 .gil li p {font-size: 14px; font-weight: 300; line-height: 15px;}
+.portfolio_1 .gil li:nth-child(1) {border-right: 1px solid black; box-sizing: border-box;}
+.portfolio_1 .gil li:nth-child(2) {border-right: 1px solid black; box-sizing: border-box;}
+.portfolio_1 .gil li:nth-child(3) {border-right: 1px solid black; box-sizing: border-box;}
+
+#portfolio .sl3 {position: absolute; left: 50%; bottom: 0px; margin-left: -175px;}
+#portfolio .sl3 img {width: 390px; height: 127px;}
+
+#portfolio h2 { z-index: 10; position: absolute; left: 50%; bottom: 25px; margin-left: -42px;
+    font-family:"Roboto"; font-weight: 400; font-size: 26px; color: white;}
+
+/*------------portfolio 오버시------------*/
+#portfolio .ov { 
+transition: 0.6s; position: absolute; left: 0px; bottom: -85px; 
+width: 339px; height: 85px; background-color: rgba(255,227,88,0.8);
+}
+#portfolio .ov p { width: 299px; margin-left: 20px; margin-top: 10px; font-size: 24px; font-weight: 500; font-family:"Roboto"; color: black;}
+#portfolio .p1:hover .ov { bottom: 0px }
+
+/*------------contact------------*/
+#contact .inner .plo {position: relative; box-shadow: 0px 0px 20px rgba(0,0,0,0.2); margin: 0 auto; width: 720px; height: 400px; background-image: url(../images/plo.jpg); /*border: 5px dashed red; */}
+#contact .plo p { font-family: "Noto Sans KR"; font-weight: 300; /*border: 5px dashed red;*/}
+#contact .plo p:nth-child(1) {position: absolute; left: 0px; top: 0px;margin-left: 99px; margin-top: 68px; font-size: 42px;}
+#contact .plo p:nth-child(2) {position: absolute; left: 0px; top: 0px;margin-left: 99px; margin-top: 125px; font-size: 20px;}
+#contact .plo .iiplo {  margin: 272px auto; width: 637px; height: 128px; border-top: 1px solid black;}
+#contact .plo .iiplo img:nth-child(1) {margin-top: 23px; margin-left: 80px; margin-right: 163px;}
+#contact .plo .iiplo img:nth-child(2) {margin-top: 23px; margin-right: 163px; }
+#contact .plo .iiplo img:nth-child(3) {margin-top: 23px; }
+#contact .plo .iiplo .iiplo_p { float: left; margin-top: 15px; font-size: 14px; }
+#contact .plo .iiplo .iiplo_p:nth-child(4) { margin-left: 55px; }
+#contact .plo .iiplo .iiplo_p:nth-child(5) {margin-left: 120px;}
+#contact .plo .iiplo .iiplo_p:nth-child(6) {margin-left: 95px;}
+
+.footer p { margin-top: 45px; text-align: center; font-weight: 300; font-family: "Roboto"; color: white; }
+
+/*------------레이어 팝업------------*/
+.pop { 
+	display:none; 
+	position:fixed; 
+	left:0px; top:0px;
+	width:100%; height:100%; 
+	background:rgba(0,0,0,0.5); 
+	z-index:1000;
+	overflow:auto;
+}
+
+.close { 
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    position:fixed; left:50%; margin-left:670px; top:20px; 
+    width: 50px; height: 50px;
+    border: 3px solid white;
+    color:white; }
+
+.c1 {position: relative; cursor:auto; margin:0 auto; width:1300px; color:#767676; background: #f6f6f6; }
+.c1 .portfolio_1 {box-shadow: 0px 0px 20px rgba(0,0,0,0.2); width: 100%; height: 350px; background: white; cursor: auto;}
+.c1 img {margin-bottom: 100px; width: 100%; /*border: 5px dashed red; */}
+
+.c1 .codin {position: absolute; left: 1000px; top: 400px; width: 80px; height: 40px; background: #ffd555;}
+.c1 .codin p {line-height: 40px; text-align: center; font-size: 16px; font-family:"Noto Sans KR"; font-weight: 400;}
